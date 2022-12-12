@@ -5,8 +5,7 @@ const pool = new Pool({
   user: 'vagrant',
   password: '123',
   host: 'localhost',
-  database: 'lightbnb',
-  port: 5432
+  database: 'lightbnb'
 });
 
 const properties = require('./json/properties.json');
@@ -62,8 +61,8 @@ const addUser =  function(user) {
     .then((user) => {
       return Promise.resolve(user.rows[0]);
     })
-    .catch(() => {
-      return null;
+    .catch((err) => {
+      console.log(err.message);
     });
 };
 exports.addUser = addUser;
@@ -104,8 +103,10 @@ const getAllProperties = (options, limit = 10) => {
   
   const queryParams = [];
 
+  //Add function to check if query already has a WHERE statement, use AND if so.
   const paramAND = params => params.length > 1 ? ' AND' : 'WHERE';
 
+  //Add function to turn price from cents to dollars
   const dollarsToCents = dollars => dollars * 100;
 
   let queryString =   `
@@ -113,6 +114,8 @@ const getAllProperties = (options, limit = 10) => {
   FROM properties
   JOIN property_reviews ON properties.id = property_id
   `;
+
+  /** if statement to check which options have been inputed **/
 
   if (options.city) {
     queryParams.push(`%${options.city}%`);
