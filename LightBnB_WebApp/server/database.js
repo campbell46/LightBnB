@@ -8,9 +8,6 @@ const pool = new Pool({
   database: 'lightbnb'
 });
 
-const properties = require('./json/properties.json');
-const users = require('./json/users.json');
-
 pool.query(`SELECT title FROM properties LIMIT 10;`);
 
 /// Users
