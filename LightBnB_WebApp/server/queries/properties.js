@@ -1,7 +1,7 @@
 //Queries for Properties
 
 //require database adapter file
-const db = require('../db/index.js');
+const db = require('../db/index');
 
 /**
  * Get all properties.
