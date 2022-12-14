@@ -9,6 +9,7 @@ This project was created and published by me as part of my learnings at Lighthou
 ## Final Product
 
 Properties searched with minimum $815: !['Screenshot of properties page'](https://github.com/campbell46/LightBnB/blob/main/docs/properties_screenshot.png)
+
 Create listing page: !['Screenshot of new listing page'](https://github.com/campbell46/LightBnB/blob/main/docs/listing_screenshot.png)
 
 
