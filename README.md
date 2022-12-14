@@ -1,6 +1,6 @@
 # LightBnB Project
 
-A simple multi-page AirBnB clone that uses a server-side Javascript to display the information from queries to web page via SQL queries.
+A simple multi-page AirBnB clone that uses a server-side Javascript to display the information from queries to web page via SQL queries. Create an account, search listings, view your listings and reservations, create new listings and log out.
 
 **_BEWARE:_ This library was published for learning purposes. It is _not_ intended for use in production-grade software.**
 
