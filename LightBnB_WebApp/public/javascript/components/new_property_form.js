@@ -4,6 +4,7 @@ $(() => {
 
   const $newPropertyForm = $(`
   <form action="/api/properties" method="post" id="new-property-form" class="new-property-form">
+      <p class="new_listing_title">Create New Listing</p>
       <div class="new-property-form__field-wrapper">
         <label for="new-property-form__title">Title</label>
         <input type="text" name="title" placeholder="Title" id="new-property-form__title">

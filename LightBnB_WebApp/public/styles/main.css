@@ -118,3 +118,9 @@ body {
   justify-content: space-between;
   padding: 8px 0px;
 }
+
+.new_listing_title {
+  font-family: 'Gill Sans', sans-serif;
+  font-size: 1.2em;
+  margin: 0 auto;
+}
