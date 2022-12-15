@@ -22,18 +22,18 @@ Create listing page: !['Screenshot of new listing page'](https://github.com/camp
 4. Create database and tables using node-postgres:
   - Create and connect to database
   ```
-  `CREATE DATABASE lightbnb;`
-  `\c lightbnb`
+  CREATE DATABASE lightbnb;
+  \c lightbnb
   ```
   - cd into root folder and create tables with the following psql commands:
   ```
-  `\i migrations/01_schema.sql`
-  `\i migrations/02_schema.sql`
+  \i migrations/01_schema.sql
+  \i migrations/02_schema.sql
   ```
   - Add data to database with the following psql commands:
   ```
-  `\i seeds/01_seeds.sql`
-  `\i seeds/02_seeds.sql`
+  \i seeds/01_seeds.sql
+  \i seeds/02_seeds.sql
   ```
 5. cd into LightBnB_WebApp-master, start the web server using the `npm run local` command.
 6. Go to <http://localhost:3000/> in your browser.
