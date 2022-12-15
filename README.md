@@ -19,24 +19,28 @@ Create listing page: !['Screenshot of new listing page'](https://github.com/camp
 1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
 2. Clone your repository onto your local device.
 3. Install dependencies using the `npm install` command.
-4. Create tables with the following psql commands:
-  - `\i migrations/01_schema.sql`
-  - `\i migrations/02_schema.sql`
-5. Add data to database with the following psql commands:
-  - `\i seeds/01_seeds.sql`
-  - `\i seeds/02_seeds.sql`
-6. Start the web server using the `npm run local` command. The app will be served at <http://localhost:3000/>.
-7. Go to <http://localhost:3000/> in your browser.
+4. Create database and tables using node-postgres:
+  - Create tables with the following psql commands:
+  ```
+  `\i migrations/01_schema.sql`
+  `\i migrations/02_schema.sql`
+  ```
+  - Add data to database with the following psql commands:
+  ```
+  `\i seeds/01_seeds.sql`
+  `\i seeds/02_seeds.sql`
+  ```
+5. cd into LightBnB_WebApp-master, start the web server using the `npm run local` command.
+6. Go to <http://localhost:3000/> in your browser.
 
 ## Dependencies
 
-- Express
-- Node
-- Bcrypt
-- Body-parser
+- express
+- node
+- bcrypt
+- body-parser
 - pg
-- Cookie-session
+- cookie-session
 
 ## Dev Dependencies
-
-- Nodemon
+- nodemon
