@@ -20,8 +20,12 @@ Create listing page: !['Screenshot of new listing page'](https://github.com/camp
 2. Clone your repository onto your local device.
 3. Install dependencies using the `npm install` command.
 4. Create database and tables using node-postgres:
-  - Create database called `lightbnb`
-  - Create tables with the following psql commands:
+  - Create and connect to database
+  ```
+  `CREATE DATABASE lightbnb;`
+  `\c lightbnb`
+  ```
+  - cd into root folder and create tables with the following psql commands:
   ```
   `\i migrations/01_schema.sql`
   `\i migrations/02_schema.sql`
