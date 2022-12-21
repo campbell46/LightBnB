@@ -13,6 +13,9 @@ Properties searched with minimum $815: !['Screenshot of properties page'](https:
 Create listing page: !['Screenshot of new listing page'](https://github.com/campbell46/LightBnB/blob/main/docs/listing_screenshot.png)
 
 
+## Project ERD
+
+['ERD for LightBnB'](https://github.com/campbell46/LightBnB/blob/main/docs/ERDs/lightBnB_ERD_Stretch.png)
 
 ## Getting Started
 
