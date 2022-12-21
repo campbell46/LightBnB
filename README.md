@@ -15,7 +15,7 @@ Create listing page: !['Screenshot of new listing page'](https://github.com/camp
 
 ## Project ERD
 
-['ERD for LightBnB'](https://github.com/campbell46/LightBnB/blob/main/docs/ERDs/lightBnB_ERD_Stretch.png)
+!['ERD for LightBnB'](https://github.com/campbell46/LightBnB/blob/main/docs/ERDs/lightBnB_ERD_Stretch.png)
 
 ## Getting Started
 
